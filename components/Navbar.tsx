@@ -8,6 +8,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
+
 const Navbar = () => {
     return (
         <nav className="navbar">
@@ -16,7 +17,7 @@ const Navbar = () => {
                     <Image src="/images/logo.svg" alt="Logo" width={46} height={44} />
                 </div>
             </Link>
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 ">
                 <NavItems/>
                 <div className="flex items-center gap-4">
                     <SignedOut>
