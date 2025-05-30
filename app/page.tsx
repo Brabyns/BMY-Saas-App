@@ -2,7 +2,7 @@ import React from 'react'
 import CompanionCard from "@/components/CompanionCard";
 import CompanionsList from "@/components/CompanionsList";
 import Cta from "@/components/CTA";
-import {recentSessions} from "@/constants";
+// import {recentSessions} from "@/constants";
 import {getAllCompanions, getRecentSessions} from "@/lib/actions/companion.actions";
 import {getSubjectColor} from "@/lib/utils";
 
@@ -10,7 +10,7 @@ import {getSubjectColor} from "@/lib/utils";
 const Page = async () => {
 
     const companions = await getAllCompanions({limit : 3})
-    const resentSessionsCompanion = await getRecentSessions({limit : 10})
+    const resentSessionsCompanion = await getRecentSessions(10 )
 
   return (
     <main>
