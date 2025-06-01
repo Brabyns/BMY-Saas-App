@@ -142,8 +142,12 @@ body {
   .home-section {
     @apply flex gap-4 justify-between items-start w-full max-lg:flex-col-reverse max-lg:items-center;
   }
+  /*.companions-grid {*/
+  /*  @apply flex flex-wrap gap-4 w-full max-md:justify-center;*/
+  /*}*/
   .companions-grid {
-    @apply flex flex-wrap gap-4 w-full max-md:justify-center;
+    @apply grid gap-4 w-full;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
   .companion-card {
     @apply flex flex-col rounded-4xl border border-black px-4 py-4 gap-5 w-full min-lg:max-w-[410px] justify-between;
